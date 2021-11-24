@@ -1,12 +1,16 @@
+import { ReactNode } from "react";
+
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "./navbar/Navbar";
 
-type Props = {};
+type Props = {
+  children: ReactNode;
+};
 
-const GeneralLayout: React.FC<Props> = () => (
-  <div className="bg-gray-900 text-white">
+const GeneralLayout: React.FC<Props> = ({ children }) => (
+  <div className="bg-gray-900 text-white min-h-screen">
     <Navbar />
-    <div>this is body</div>
+    {children}
     <Footer />
   </div>
 );
