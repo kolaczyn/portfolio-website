@@ -1,3 +1,4 @@
+import AppLink from "../../common/AppLink";
 import Logo from "./Logo";
 
 type Props = {};
@@ -7,9 +8,9 @@ const Navbar: React.FC<Props> = () => (
     <Logo />
     <nav>
       <ul className="flex space-x-4">
-        <li>about me</li>
-        <li>projects</li>
-        <li>light mode</li>
+        <AppLink to="/about-me">about me</AppLink>
+        <AppLink to="/projects">projects</AppLink>
+        <AppLink to="/light-mode">dark mode</AppLink>
       </ul>
     </nav>
   </header>
