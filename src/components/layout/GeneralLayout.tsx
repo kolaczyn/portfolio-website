@@ -8,9 +8,9 @@ type Props = {
 };
 
 const GeneralLayout: React.FC<Props> = ({ children }) => (
-  <div className="bg-gray-900 text-white min-h-screen">
+  <div className="bg-gray-900 text-white min-h-screen flex flex-col">
     <Navbar />
-    {children}
+    <div className="flex-1 py-4">{children}</div>
     <Footer />
   </div>
 );
