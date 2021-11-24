@@ -6,12 +6,12 @@ type Props = {
   className?: string;
 };
 
-const ContainerBig: React.FC<Props> = ({ children, className }) => (
+const ContainerMedium: React.FC<Props> = ({ children, className }) => (
   <div className={classNames("max-w-3xl mx-auto", className)}>{children}</div>
 );
 
-ContainerBig.defaultProps = {
+ContainerMedium.defaultProps = {
   className: "",
 };
 
-export default ContainerBig;
+export default ContainerMedium;
