@@ -1,11 +1,8 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import GeneralLayout from "../components/layout/GeneralLayout";
 
 const Home: NextPage = () => {
-  return (
-    <div>
-      <h1>hello world</h1>
-    </div>
-  )
-}
+  return <GeneralLayout />;
+};
 
-export default Home
+export default Home;
