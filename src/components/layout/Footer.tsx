@@ -1,5 +1,5 @@
 import AppLink from "../common/AppLink";
-import ContainerBig from "../container/ContainerBig";
+import ContainerMedium from "../container/ContainerMedium";
 import { AiFillGithub as GithubIcon } from "react-icons/ai";
 import { AiOutlineMail as MailIcon } from "react-icons/ai";
 import { FiTwitter as TwitterIcon } from "react-icons/fi";
@@ -12,18 +12,18 @@ const Footer: React.FC<Props> = () => {
   return (
     <footer>
       <div className="bg-gray-800 h-1" />
-      <ContainerBig className="bg-gray-900 py-2 flex">
+      <ContainerMedium className="bg-gray-900 flex space-x-28 py-4">
         <div className="flex-1">
-          <h4 className="uppercase font-bold">Sitemap</h4>
-          <ul className="space-x-3">
+          <h4 className="uppercase font-bold text-center mb-2">Sitemap</h4>
+          <ul className="space-x-3 flex justify-between">
             <AppLink to="/about-me">about me</AppLink>
             <AppLink to="/projects">projects</AppLink>
             <AppLink to="/light-mode">dark mode</AppLink>
           </ul>
         </div>
         <div className="flex-1">
-          <h4 className="uppercase font-bold">Links</h4>
-          <ul className="space-x-3">
+          <h4 className="uppercase font-bold text-center mb-2">Links</h4>
+          <ul className="space-x-3 flex justify-between">
             <AppExternalLink to="https://github.com/kolaczyn">
               <div className="flex items-center space-x-1">
                 <GithubIcon />
@@ -44,9 +44,9 @@ const Footer: React.FC<Props> = () => {
             </AppExternalLink>
           </ul>
         </div>
-      </ContainerBig>
+      </ContainerMedium>
       <div className="bg-gray-800 h-1" />
-      <div className="bg-gray-900 flex justify-around">
+      <div className="bg-gray-900 flex justify-around py-4">
         created by Paweł Kołaczyński &copy; {currentYear}
       </div>
     </footer>
